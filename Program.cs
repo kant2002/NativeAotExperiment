@@ -21,7 +21,7 @@ static class Program
         Application.ApplicationExit += (s, e) =>
         {
             stopwatch.Stop();
-            Trace.WriteLine($"winforms_nativeaot: time taken: {stopwatch.ElapsedMilliseconds}");
+            Console.WriteLine($"winforms_nativeaot: time taken: {stopwatch.ElapsedMilliseconds}");
         };
 
         Application.Run(new Form1());
